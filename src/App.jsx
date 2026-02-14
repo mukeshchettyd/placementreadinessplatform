@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Landing from './pages/Landing'
 import DashboardLayout from './layouts/DashboardLayout'
 import Dashboard from './pages/Dashboard'
@@ -9,7 +9,7 @@ import Profile from './pages/Profile'
 
 function App() {
   return (
-    <BrowserRouter basename="/placementreadinessplatform">
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route element={<DashboardLayout />}>
@@ -21,7 +21,7 @@ function App() {
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
