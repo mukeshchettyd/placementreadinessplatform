@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary-50: hsl(245, 58%, 96%);
+    --color-primary-100: hsl(245, 58%, 90%);
+    --color-primary-200: hsl(245, 58%, 80%);
+    --color-primary-300: hsl(245, 58%, 70%);
+    --color-primary-400: hsl(245, 58%, 61%);
+    --color-primary-500: hsl(245, 58%, 51%);
+    --color-primary-600: hsl(245, 58%, 43%);
+    --color-primary-700: hsl(245, 58%, 35%);
+    --color-primary-800: hsl(245, 58%, 27%);
+    --color-primary-900: hsl(245, 58%, 19%);
+    --color-primary-950: hsl(245, 58%, 11%);
+
+    --font-heading: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+}

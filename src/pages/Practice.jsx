@@ -1,24 +1,20 @@
+import { Code2 } from 'lucide-react'
+
 function Practice() {
     return (
-        <div className="page-shell">
-            <div className="page-header">
-                <h1 className="page-title">Practice</h1>
-                <p className="page-subtitle">Sharpen your problem-solving across DSA, aptitude, and system design.</p>
+        <div className="max-w-5xl mx-auto">
+            <div className="mb-8">
+                <h1 className="text-2xl font-bold text-gray-900 tracking-tight mb-1">Practice</h1>
+                <p className="text-gray-500">Sharpen your skills with curated coding challenges.</p>
             </div>
-            <div className="page-body">
-                <div className="empty-state-card">
-                    <div className="empty-state-icon-wrap">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                            <rect x="8" y="12" width="32" height="24" rx="3" stroke="currentColor" strokeWidth="1.5" />
-                            <path d="M18 22l4 4 8-8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                    </div>
-                    <h3 className="empty-state-title">Practice module coming soon</h3>
-                    <p className="empty-state-text">
-                        Curated DSA problems, aptitude drills, and coding exercises will appear here.
-                        Check back after we add the practice dataset.
-                    </p>
+            <div className="bg-white rounded-xl border border-gray-100 p-12 text-center">
+                <div className="w-14 h-14 rounded-2xl bg-primary-50 text-primary-400 flex items-center justify-center mx-auto mb-5">
+                    <Code2 className="w-7 h-7" />
                 </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Practice module coming soon</h3>
+                <p className="text-sm text-gray-400 max-w-sm mx-auto leading-relaxed">
+                    Curated DSA problems, aptitude drills, and coding exercises will appear here. Stay tuned.
+                </p>
             </div>
         </div>
     )
