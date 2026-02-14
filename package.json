@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://mukeshchettyd.github.io/placement-readiness-platform/",
+  "homepage": "https://mukeshchettyd.github.io/placementreadinessplatform/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

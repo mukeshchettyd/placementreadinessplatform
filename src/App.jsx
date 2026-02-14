@@ -15,7 +15,7 @@ import './styles/dashboard.css'
 
 function App() {
   return (
-    <BrowserRouter basename="/placement-readiness-platform">
+    <BrowserRouter basename="/placementreadinessplatform">
       <div className="app-layout">
         <Navigation />
         <Routes>
