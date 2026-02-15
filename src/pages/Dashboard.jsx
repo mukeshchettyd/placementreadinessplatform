@@ -12,7 +12,15 @@ import { Card, CardHeader, CardTitle, CardContent, CardDescription } from '../co
 /* ================================================================
    MOCK DATA
    ================================================================ */
-const READINESS_SCORE = 72
+const getLatestScore = () => {
+    const latest = localStorage.getItem('latest_analysis')
+    if (latest) {
+        return JSON.parse(latest).readinessScore
+    }
+    return 72
+}
+
+const READINESS_SCORE = getLatestScore()
 
 const SKILL_DATA = [
     { subject: 'DSA', score: 75, fullMark: 100 },
@@ -116,7 +124,13 @@ function Dashboard() {
                     </CardHeader>
                     <CardContent className="flex flex-col items-center pt-6 pb-8">
                         <CircularProgress value={READINESS_SCORE} />
-                        <p className="mt-4 text-sm font-medium text-gray-500">Readiness Score</p>
+                        <p className="mt-4 text-sm font-medium text-gray-500 mb-6">Readiness Score</p>
+                        <Link
+                            to="/analyze"
+                            className="inline-flex items-center gap-2 px-6 py-2.5 bg-primary-500 hover:bg-primary-600 text-white text-sm font-semibold rounded-lg transition-all shadow-md shadow-primary-500/20"
+                        >
+                            <Target className="w-4 h-4" /> Analyze New JD
+                        </Link>
                     </CardContent>
                 </Card>
 

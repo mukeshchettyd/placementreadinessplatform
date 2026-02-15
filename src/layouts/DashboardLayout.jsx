@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { Outlet, NavLink } from 'react-router-dom'
 import {
     LayoutDashboard,
+    Search,
+    History as HistoryIcon,
     Code2,
     ClipboardCheck,
     BookOpen,
@@ -13,6 +15,8 @@ import {
 
 const sidebarLinks = [
     { to: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
+    { to: '/analyze', label: 'Analyze JD', icon: Search },
+    { to: '/history', label: 'History', icon: HistoryIcon },
     { to: '/practice', label: 'Practice', icon: Code2 },
     { to: '/assessments', label: 'Assessments', icon: ClipboardCheck },
     { to: '/resources', label: 'Resources', icon: BookOpen },
